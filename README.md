@@ -53,7 +53,7 @@ After the data was imported into the MySQL database, a series of queries was exe
 
 The project provided valuable insights into the dynamics of the Bitcoin market, including:
 
-* **[Key Finding 1]**: The month with the highest absolute profit over the entire period was **November 2024**, with a total gain of **$26,115.98**.
-* **[Key Finding 2]**: The day with the largest trading volume was **November 8, 2022**, with a volume of **760,705 BTC**, which points to a period of extremely high market activity.
-* **[Key Finding 3]**: The 30-day rolling average of the closing price was used to identify long-term trends, which confirmed a sustained upward momentum in the market during the first quarter of 2024. 
-* **[Key Finding 4]**: The average daily trading value (`Quote asset volume`) in 2024 was **lower** than in 2023, even though the average price of Bitcoin was significantly higher. This suggests that market activity did not increase in proportion to the price rise during that period.
+* **Key Finding 1**: The month with the highest absolute profit over the entire period was **November 2024**, with a total gain of **$26,115.98**.
+* **Key Finding 2**: The day with the largest trading volume was **November 8, 2022**, with a volume of **760,705 BTC**, which points to a period of extremely high market activity.
+* **Key Finding 3**: The 30-day rolling average of the closing price was used to identify long-term trends, which confirmed a sustained upward momentum in the market during the first quarter of 2024. 
+* **Key Finding 4**: The average daily trading value (`Quote asset volume`) in 2024 was **lower** than in 2023, even though the average price of Bitcoin was significantly higher. This suggests that market activity did not increase in proportion to the price rise during that period.
