@@ -1,59 +1,59 @@
-Cryptocurrency Data Analysis: BTC/USDT on Binance
-This project is a data analysis of the BTC/USDT (Bitcoin to Tether) trading pair on the Binance exchange. The project demonstrates skills in data analysis, data preparation (ETL), and SQL proficiency.
+### Cryptocurrency Data Analysis: BTC/USDT on Binance
 
-Project Overview
-The goal of this project is to explore historical daily trading data for BTC/USDT to identify key trends, metrics, and anomalies. The following tasks were completed:
+This project is a data analysis of the BTC/USDT (Bitcoin to Tether) trading pair on the Binance exchange. The project demonstrates skills in **data analysis**, **data preparation (ETL)**, and **SQL proficiency using MySQL**.
 
-Preparation and cleaning of the raw data.
+---
 
-Extraction of key market metrics for in-depth analysis.
+### Project Overview
 
-Identification of long-term trends and patterns.
+The goal of this project is to explore historical daily trading data for BTC/USDT to identify key trends and metrics. The analysis was structured to answer specific business questions and demonstrate a range of SQL capabilities.
 
-Execution of advanced analysis using complex SQL queries.
+### Technologies Used
 
-Technologies Used
-Python: Used for initial data preparation and cleaning.
+* **Python**: Used in a Jupyter Notebook for the initial data cleaning and preparation of the raw `.csv` file.
+* **MySQL**: The database platform used for all analytical queries.
+* **SQL**: The core language for data exploration and analysis.
 
-Jupyter Notebook: For executing Python code and documenting the data cleaning process.
+### Data Sources
 
-MySQL: For performing all analytical queries on the cleaned dataset.
+* `btc_1d_data_2018_to_2025.csv`: The original raw dataset with daily trading data for BTC/USDT from 2018 to 2025.
+* `btc_data_cleaning.ipynb`: A Jupyter Notebook that details the data cleaning process.
+* `btc_1d_data_cleaned.csv`: The final cleaned dataset used for SQL analysis.
+* `btc.sql`: A comprehensive file containing all the SQL queries used in this project.
 
-Data Sources
-btc_1d_data_2018_to_2025.csv: The original file with daily trading data for BTC/USDT from 2018 to 2025.
+### Key Project Steps
 
-btc_data_cleaning.ipynb: The Jupyter Notebook detailing the data preparation process.
+#### 1. Data Preparation with Python
 
-Key Project Steps
-1. Data Preparation with Python
-This stage involved using a Jupyter Notebook (btc_data_cleaning.ipynb) to prepare the raw data file. The main steps included:
+This stage involved using a Jupyter Notebook to prepare the raw data for the database. 
+* Loading the raw data into a pandas DataFrame.
+* Converting timestamp columns to the appropriate `datetime` format.
+* Exporting the final cleaned data to `btc_1d_data_cleaned.csv`.
 
-Loading the data into a pandas DataFrame.
+#### 2. Data Analysis with SQL (MySQL)
 
-Converting timestamp columns to the correct format.
+After the data was imported into the MySQL database, a series of queries was executed to explore the market and uncover key insights. The `btc.sql` file is organized into three sections:
 
-Checking for missing values and duplicates.
+**Data Exploration**
+* **Q1-Q3**: Basic queries to understand the dataset's scale, time range, and average metrics.
 
-Saving the cleaned dataset to a new file, btc_1d_data_cleaned.csv.
+**Market Analysis**
+* **Q4-Q6**: Queries to identify significant events such as the highest closing price and days with the largest trading volume. This section also includes an annual breakdown of trading volume.
 
-This step highlights my ability to handle raw data using Python and popular data analysis libraries before loading it into a database.
+**Time-Based Analysis and Advanced Queries**
+* **Q7-Q11**: This section demonstrates advanced SQL skills, including:
+    * Using mathematical operations to calculate daily price changes.
+    * Filtering data to find specific trends (e.g., days with price increases).
+    * Leveraging **window functions** to calculate a 30-day rolling average and find the longest consecutive streak of price increases.
+    * Using CTEs and JOINs to identify the top 5 most profitable months.
 
-2. Data Analysis with SQL (MySQL)
-After cleaning, the btc_1d_data_cleaned.csv file was loaded into a MySQL database. All analytical queries were performed using SQL. The btc.sql file contains queries that answer the following questions:
+---
 
-Data Exploration: Finding the date range, total number of records, and average prices.
+### Key Findings
 
-Market Analysis: Identifying days with the highest price and trading volume, and calculating average volatility.
-
-Advanced Analysis: Calculating moving averages, identifying the most profitable months, and finding the longest consecutive price increase streaks.
-
-Key Findings
 The project provided valuable insights into the dynamics of the Bitcoin market, including:
 
-[Key Finding 1]: For example, "Trading volume increased significantly in certain years, indicating growing market interest."
-
-[Key Finding 2]: For example, "The moving average analysis confirmed long-term trends, which can be useful for investment decision-making."
-
-[Key Finding 3]: For example, "The most profitable month over the entire period was [Month Name], when the price grew by [percentage]."
-
-This project serves as a comprehensive demonstration of my skills as a data analyst, from data cleaning and preparation to in-depth analysis.
+* **[Key Finding 1]**: The month with the highest absolute profit over the entire period was **November 2024**, with a total gain of **$26,115.98**.
+* **[Key Finding 2]**: The day with the largest trading volume was **November 8, 2022**, with a volume of **760,705 BTC**, which points to a period of extremely high market activity.
+* **[Key Finding 3]**: The 30-day rolling average of the closing price was used to identify long-term trends, which confirmed a sustained upward momentum in the market during the first quarter of 2024. 
+* **[Key Finding 4]**: The average daily trading value (`Quote asset volume`) in 2024 was **lower** than in 2023, even though the average price of Bitcoin was significantly higher. This suggests that market activity did not increase in proportion to the price rise during that period.
